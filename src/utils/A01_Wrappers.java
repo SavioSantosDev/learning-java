@@ -1,7 +1,7 @@
 package src.utils;
 
-public class Wrappers {
-    public static void main(String[] args) {
+public class A01_Wrappers {
+    public static void main(A02_Strings[] args) {
         // Primitive types:
         byte bytePrimitive = 1;
         short shortPrimitive = 2;
