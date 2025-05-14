@@ -3,6 +3,11 @@ package src.utils;
 import java.text.DateFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Locale;
@@ -89,6 +94,23 @@ public class A03_Formating {
         for (String pattern : patterns) {
             DateFormat dateFormat = new SimpleDateFormat(pattern);
             System.out.println(dateFormat.format(calendar.getTime()));
+        }
+
+        {
+            System.out.println("\n\nDateTimeFormat");
+            System.out.println("BASIC_ISO_DATE: " + DateTimeFormatter.BASIC_ISO_DATE.format(LocalDate.now()));
+            System.out.println("ISO_DATE: " + DateTimeFormatter.ISO_DATE.format(LocalDate.now()));
+            System.out.println("ISO_LOCAL_DATE: " + DateTimeFormatter.ISO_LOCAL_DATE.format(LocalDate.now()));
+            System.out.println("ISO_ORDINAL_DATE: " + DateTimeFormatter.ISO_ORDINAL_DATE.format(LocalDate.now()));
+            System.out.println("ISO_WEEK_DATE: " + DateTimeFormatter.ISO_WEEK_DATE.format(LocalDate.now()));
+            System.out.println("ISO_DATE_TIME: " + DateTimeFormatter.ISO_DATE_TIME.format(LocalDateTime.now()));
+            System.out.println("ISO_LOCAL_DATE_TIME: " + DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(LocalDateTime.now()));
+            System.out.println("ISO_OFFSET_DATE_TIME: " + DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(OffsetDateTime.now()));
+            System.out.println("ISO_ZONED_DATE_TIME: " + DateTimeFormatter.ISO_ZONED_DATE_TIME.format(OffsetDateTime.now()));
+            System.out.println("ISO_INSTANT: " + DateTimeFormatter.ISO_INSTANT.format(Instant.now()));
+            System.out.println("ISO_LOCAL_TIME: " + DateTimeFormatter.ISO_LOCAL_TIME.format(LocalDateTime.now()));
+            System.out.println("ISO_OFFSET_TIME: " + DateTimeFormatter.ISO_OFFSET_TIME.format(OffsetDateTime.now()));
+            System.out.println("ISO_TIME: " + DateTimeFormatter.ISO_TIME.format(OffsetDateTime.now()));
         }
     }
 
