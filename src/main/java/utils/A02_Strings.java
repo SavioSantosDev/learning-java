@@ -1,4 +1,4 @@
-package src.utils;
+package utils;
 
 public class A02_Strings {
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class A02_Strings {
         e reutilizada.
 
         Quando uma string é criada como literal (por exemplo, String str = "Hello";), o Java verifica se já existe uma string
-        com o mesmo valor no String Pool. Se existir, a referência dessa string é reunilizada; caso contrário, a string é
+        com o mesmo valor no String Pool. Se existir, a referência dessa string é reutilizada; caso contrário, a string é
         adicionada ao pool.
 
         Strings criadas com o operador new (por exemplo, String str = new String("Hello");) não são armazenadas no String Pool,
