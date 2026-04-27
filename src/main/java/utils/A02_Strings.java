@@ -1,5 +1,3 @@
-package utils;
-
 public class A02_Strings {
     public static void main(String[] args) {
         /*

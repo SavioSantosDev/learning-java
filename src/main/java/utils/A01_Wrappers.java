@@ -1,5 +1,3 @@
-package utils;
-
 public class A01_Wrappers {
     public static void main(String[] args) {
         // Primitive types:
