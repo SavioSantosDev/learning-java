@@ -44,7 +44,7 @@ public class ExecutorsExample {
                     System.out.println(Thread.currentThread().getName() + ": Tarefa " + taskId + " iniciada");
                     try {
                         Thread.sleep(500);
-                    } catch (InterruptedException _) {
+                    } catch (InterruptedException e) {
                         Thread.currentThread().interrupt();
                     }
                     System.out.println(Thread.currentThread().getName() + ": Tarefa " + taskId + " concluída");
@@ -74,7 +74,7 @@ public class ExecutorsExample {
                     System.out.println(Thread.currentThread().getName() + ": Tarefa sequencial " + taskId);
                     try {
                         Thread.sleep(200);
-                    } catch (InterruptedException _) {
+                    } catch (InterruptedException e) {
                         Thread.currentThread().interrupt();
                     }
                 });

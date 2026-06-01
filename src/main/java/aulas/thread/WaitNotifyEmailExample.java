@@ -69,7 +69,7 @@ public class WaitNotifyEmailExample {
                 System.out.println(threadName + ": Processando email: " + email);
                 try {
                     Thread.sleep(500);
-                } catch (InterruptedException _) {
+                } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
                 System.out.println(threadName + ": Email processado: " + email);
