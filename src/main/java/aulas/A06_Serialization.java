@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class A06_Serialization {
-    static void main() {
+    public static void main(String[] args) {
 
         System.out.println("\n");
         System.out.println("=".repeat(20));

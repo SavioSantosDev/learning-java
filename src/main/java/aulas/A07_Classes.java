@@ -31,7 +31,7 @@ class MyList<T> {
 
 public class A07_Classes {
 
-    static void main() {
+    public static void main(String[] args) {
         MyList<String> list = new MyList(new String[]{"a", "b", "c"});
         MyList<String>.Iterator iterator = list.iterator();
         while (iterator.hasNext()) {

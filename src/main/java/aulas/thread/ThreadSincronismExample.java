@@ -31,7 +31,7 @@ class Account {
 }
 
 public class ThreadSincronismExample {
-    static void main() throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         Account account = new Account(1000.0);
         
         System.out.println("Saldo inicial da conta: " + account.getBalance());

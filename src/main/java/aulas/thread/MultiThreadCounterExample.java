@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class MultiThreadCounterExample {
 
-    static void main() throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println("=== Unsafe Counter (sem sincronismo) ===");
         runTest(new UnsafeCounter());
 

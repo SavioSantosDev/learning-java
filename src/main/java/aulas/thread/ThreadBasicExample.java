@@ -2,7 +2,7 @@ package aulas.thread;
 
 public class ThreadBasicExample {
 
-    static void main() throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         // Cria e instancia 5 threads
         Thread thread1 = new Thread(new MyRunnable(), "Thread-1");
         Thread thread2 = new Thread(new MyRunnable(), "Thread-2");

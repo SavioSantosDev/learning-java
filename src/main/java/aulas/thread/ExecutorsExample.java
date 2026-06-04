@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 
 public class ExecutorsExample {
 
-    static void main() throws InterruptedException, ExecutionException {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
         System.out.println("=== 1. FixedThreadPool ===");
         demoFixedThreadPool();
 

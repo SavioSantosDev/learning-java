@@ -79,7 +79,7 @@ public class WaitNotifyEmailExample {
         }
     }
 
-    static void main() {
+    public static void main(String[] args) {
         EmailQueue emailQueue = new EmailQueue();
 
         Thread t1 = new Thread(new EmailReceiver(emailQueue), "Thread-1");

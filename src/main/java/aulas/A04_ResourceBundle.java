@@ -2,7 +2,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class A04_ResourceBundle {
-    static void main() {
+    public static void main(String[] args) {
         System.out.println("A04_ResourceBundle");
 
         ResourceBundle bundle = ResourceBundle.getBundle("messages"); // Default

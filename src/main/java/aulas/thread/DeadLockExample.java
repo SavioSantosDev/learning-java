@@ -6,7 +6,7 @@ public class DeadLockExample {
     private static final Object lock1 = new Object();
     private static final Object lock2 = new Object();
 
-    static void main() {
+    public static void main(String[] args) {
         // Thread 1: tenta adquirir lock1 primeiro, depois lock2
         Thread thread1 = new Thread(() -> {
             String threadName = Thread.currentThread().getName();
